@@ -1,0 +1,91 @@
+/* Estilos adicionales para el dashboard */
+
+/* Efecto de carga en tarjetas */
+.opacity-50 {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+/* Mejoras en el drop zone */
+.drop-zone {
+    border: 2px dashed #cbd5e0;
+    border-radius: 12px;
+    padding: 2.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: #f8fafc;
+}
+
+.drop-zone:hover,
+.drop-zone.dragover {
+    border-color: #4f46e5;
+    background: #eef2ff;
+    transform: scale(1.01);
+}
+
+/* Mejoras en las tarjetas */
+.card-hover {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+}
+
+/* Mejoras en la tabla */
+.table-custom th {
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #64748b;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.table-custom td {
+    padding: 0.75rem 0.5rem;
+    vertical-align: middle;
+}
+
+/* Animación de carga en progress bar */
+.progress-bar-striped {
+    background-image: linear-gradient(45deg, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+    background-size: 1rem 1rem;
+}
+
+/* Mejoras en los toast */
+.toast {
+    border-radius: 12px !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.toast .toast-body {
+    font-weight: 500;
+}
+
+/* Scrollbar personalizada */
+.sidebar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #4a5568;
+    border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #5a6a7a;
+}
+
+/* Badge de período */
+.badge.bg-primary {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed) !important;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.85rem;
+}
